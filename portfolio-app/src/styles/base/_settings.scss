@@ -1,0 +1,26 @@
+// Normalize
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// Variables
+$dark-blue: #272f47;
+$white: #e8e8e8;
+
+// Mixins
+@mixin flex($direction: row, $align: center, $justify: center){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin position($position: absolute, $top: auto, $btm: auto, $left: auto, $right: auto){
+    position: $position;
+    top: $top;
+    bottom: $btm;
+    left: $left;
+    right: $right;
+}
