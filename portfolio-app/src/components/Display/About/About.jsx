@@ -1,7 +1,19 @@
+import profilePicture from '../../../media/images/foto-perfil2.png';
+
 function About(){
     return (
         <div className="about_container">
-            <h1>Acerca de mí...</h1>
+            <div className="header">
+                <h1>Hola, soy Marcelo Augusto Armella !</h1>
+            </div>
+            <div className="aside">
+                <img className='profilePicture' src={profilePicture} alt="Foto de Marcelo Armella" />
+            </div>
+            <div className="main">
+                <p>
+                    Fullstack web developer, recientemente graduado del bootcamp "Soy Henry", en donde adquirí muchos conocimientos sobre NodeJs, React con múltiples librerías, Express y más. Además de aprender a trabajar en grupo con metodologías SCRUM y usando tecnologías como Git.
+                </p>
+            </div>
         </div>
     );
 }

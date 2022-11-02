@@ -73,9 +73,7 @@ const NavMenu = () => {
                         onClick={handleCloseModal}
                         size="2x"
                     />
-                    <div className="navMenu_modal-window">
-                        {links[slideNumber].element}
-                    </div>
+                    {links[slideNumber].element}
                 </div>
             )}
 
