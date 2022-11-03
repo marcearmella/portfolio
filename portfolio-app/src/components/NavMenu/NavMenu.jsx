@@ -10,22 +10,6 @@ import {
     faCircleXmark,
 } from "@fortawesome/free-solid-svg-icons";
 
-const links = [
-    {
-        link: 'sobre mí',
-        element: <About />
-    },{
-        link: 'habilidades',
-        element: <Skills />
-    },{
-        link: 'proyectos',
-        element: <Projects />
-    },{
-        link: 'contáctame',
-        element: <Contact />
-    }
-];
-
 const NavMenu = () => {
     const [slideNumber, setSlideNumber] = useState(0);
     const [openModal, setOpenModal] = useState(false);
@@ -50,6 +34,22 @@ const NavMenu = () => {
             ? setSlideNumber(0)
             : setSlideNumber(slideNumber + 1);
     };
+
+    const links = [
+        {
+            link: 'sobre mí',
+            element: <About handleCloseModal={handleCloseModal} />
+        },{
+            link: 'habilidades',
+            element: <Skills />
+        },{
+            link: 'proyectos',
+            element: <Projects />
+        },{
+            link: 'contáctame',
+            element: <Contact />
+        }
+    ];
 
     return (
         <div className="navMenu">

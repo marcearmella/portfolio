@@ -9,7 +9,7 @@
         @include flex($justify: flex-start);
 
         .nav_ul{
-            width: 30%;
+            width: auto;
             margin-left: 40px;
             pointer-events: all;
 
@@ -17,6 +17,7 @@
                 margin-bottom: 12px;
                 list-style: none;
                 transition: .1s ease;
+                cursor: url('../media/cursors/ow-pointer.cur'), pointer;
 
                 &:hover{
                     transform: translate(30px, 0);
@@ -40,7 +41,6 @@
         top: 0;
         @include flex;
         z-index: 100;
-        
 
         .icon-left{
             @include position($left: 0);

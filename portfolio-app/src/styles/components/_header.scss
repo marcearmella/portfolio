@@ -11,8 +11,8 @@
 
     .player{
         background: #ffffffdd;
-        width: 25rem;
-        height: 4.2rem;
+        
+        height: 5rem;
         border-radius: 4px;
         display: flex;
         align-items: center;
@@ -26,7 +26,6 @@
             background: #415;
 
             img{
-                width: 100%;
                 height: 100%;
             }
         }
@@ -34,7 +33,7 @@
             color: #151515;
             font-size: 1.6rem;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            margin-left: .8rem;
+            padding: 0 30px;
         }
 
         &:hover{

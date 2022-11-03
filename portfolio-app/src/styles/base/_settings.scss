@@ -6,7 +6,7 @@
 }
 
 // Variables
-$back1: #bacadd;
+$back1: #dae5ee;
 $back2: #8b94a9;
 $dark-blue: #3b486d;
 $light-blue: #7c9dc5;
@@ -41,12 +41,13 @@ $orange: #e26019;
     background: $background;
     color: $color;
     overflow: hidden;
-    animation: openModal .5s ease;
+    animation: openModal .6s ease-in-out;
 }
 
 //Keyframes
 @keyframes openModal{
     0%{
+        transform: rotateX(0) rotateY(10deg) rotateZ(0deg);
         opacity: .2;
     }
 }

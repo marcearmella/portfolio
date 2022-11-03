@@ -7,7 +7,7 @@ function Header(){
             <img src={overwatch} />
             <div className="player">
                 <div className="avatar"><img src={avatar}/></div>
-                <p className="name">Marcelo Augusto Armella</p>
+                <p className="name">Marcelo Armella</p>
             </div>
         </div>
     );
