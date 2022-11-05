@@ -8,6 +8,7 @@
 // Variables
 $back1: #dae5ee;
 $back2: #8b94a9;
+$back3: #cae6fc;
 $dark-blue: #3b486d;
 $light-blue: #7c9dc5;
 $white: #f9f9f9;
@@ -20,11 +21,12 @@ $dark-yellow: #e3b200;
 $orange: #e26019;
 
 // Mixins
-@mixin flex($direction: row, $align: center, $justify: center){
+@mixin flex($direction: row, $align: center, $justify: center, $wrap: nowrap){
     display: flex;
     flex-direction: $direction;
     align-items: $align;
     justify-content: $justify;
+    flex-wrap: $wrap;
 }
 
 @mixin position($position: absolute, $top: auto, $btm: auto, $left: auto, $right: auto){

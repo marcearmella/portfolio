@@ -1,3 +1,81 @@
 .skills_container{
     @include modal;
+    background: $back1;
+    @include position($position: relative);
+    @include flex($direction: column);
+    z-index: -10;
+
+    .image{
+        @include position($top: 0);
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: blur(6px) opacity(.8);
+    }
+    .title{
+        width: 100%;
+
+        h1{
+            margin: 20px 0 0 40px;
+            font-size: 6em;
+            font-family: "noodle_oblique", sans-serif;
+            font-weight: normal;
+            letter-spacing: 3px;
+            color: $white;
+        }
+    }
+    .main{
+        @include flex($align: flex-start, $justify: flex-start);
+        width: 90%;
+        height: 100%;
+        padding-top: 20px;
+        gap: 5px;
+
+        .section{
+
+            .skillsTitle{
+                margin-bottom: 10px;
+
+                h2{
+                    font-family: 'noodle_oblique';
+                    font-size: 3em;
+                    letter-spacing: 3px;
+                    color: $white;
+                }
+            }
+        }
+        .softSkills{
+            width: 30%;
+
+            .skillsList{
+                @include flex($wrap: wrap, $justify: flex-end);
+                gap: 8px;
+
+                li{
+                    color: $black;
+                    list-style: none;
+                    background: $white;
+                    width: 120px;
+                    height: 150px;
+                    border-radius: 4px;
+                    @include flex($direction: column,$justify: flex-start);
+
+                    .skill-icon{
+                        width: 90%;
+                        height: 70%;
+                    }
+                    p{
+                        font-family: sans-serif;
+                        font-weight: bold;
+                        text-align: center;
+                        height: 30%;
+                    }
+                }
+            }
+        }
+        .hardSkills{
+            width: 70%;
+        }
+    }
 }

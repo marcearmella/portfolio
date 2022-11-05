@@ -20,10 +20,10 @@
         }
         &::after{
             content: '';
-            width: 700px;
+            width: 1000px;
             height: 1000px;
             transform: rotate(45deg) translateX(100px);
-            background: $light-red;
+            background: linear-gradient(to left, $light-red 60%, #00000000 100%);
             @include position($right: 0);
         }
     }
