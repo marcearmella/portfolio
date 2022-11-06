@@ -41,10 +41,10 @@ const NavMenu = () => {
             element: <About handleCloseModal={handleCloseModal} />
         },{
             link: 'habilidades',
-            element: <Skills />
+            element: <Skills handleCloseModal={handleCloseModal} />
         },{
             link: 'proyectos',
-            element: <Projects />
+            element: <Projects handleCloseModal={handleCloseModal} />
         },{
             link: 'contáctame',
             element: <Contact />

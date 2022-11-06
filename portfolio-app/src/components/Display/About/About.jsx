@@ -16,7 +16,7 @@ function About({handleCloseModal}){
                 </p>
             </div>
             <button onClick={handleCloseModal}>
-                ATRAS
+                CERRAR
             </button>
         </div>
     );

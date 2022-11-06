@@ -1,7 +1,7 @@
 import skills from './data/skills_data.js';
 import background from '../../../media/images/desktop-background.jpg';
 
-function Skills(){
+function Skills({handleCloseModal}){
     const soft = skills.soft;
     const hard = skills.hard;
     return (
@@ -28,11 +28,20 @@ function Skills(){
                     <div className="skillsTitle">
                         <h2>Duras</h2>
                     </div>
-                    <div className="skillsList">
-
-                    </div>
+                    <ul className="skillsList">
+                        {hard.map(e => 
+                            <li key={e.name}>
+                                <img src={e.icon} className='skill-icon' alt="icon"/>
+                                <p>{e.name}</p>
+                            </li>
+                        )}
+                    </ul>
                 </div>
             </div>
+            
+            <button onClick={handleCloseModal}>
+                CERRAR
+            </button>
         </div>
     );
 }

@@ -9,18 +9,19 @@
         color: $white;
         @include flex($justify: flex-end);
         @include position($position: relative);
-        padding-right: 20px;
+        padding-right: 80px;
         overflow: hidden;
         h1{
             font-size: 2.8em;
             font-family: "noodle_oblique", sans-serif;
+            font-weight: normal;
             letter-spacing: 3px;
             z-index: 100;
             color: $back1;
         }
         &::after{
             content: '';
-            width: 1000px;
+            width: 1100px;
             height: 1000px;
             transform: rotate(45deg) translateX(100px);
             background: linear-gradient(to left, $light-red 60%, #00000000 100%);
@@ -32,14 +33,14 @@
         width: 100%;
         height: 80%;
         padding-left: 40%;
-        padding-right: 50px;
-        @include flex();
+        padding-right: 80px;
+        @include flex($justify: flex-end);
 
         p{
             font-family: "noodle_oblique";
             font-size: 2.5em;
             letter-spacing: 1px;
-            text-align: center;
+            text-align: end;
             border-radius: 6px;
             width: 700px;
             color: $white;
@@ -57,7 +58,7 @@
         }
     }
     button{
-        @include position($btm: 0, $left: 0, $right: 0);
+        @include position($btm: 0, $right: 80px);
         font-size: 2em;
         padding: 10px 20px;
         margin: 0 auto;

@@ -1,6 +1,6 @@
 .skills_container{
     @include modal;
-    background: $back1;
+    background: $back2;
     @include position($position: relative);
     @include flex($direction: column);
     z-index: -10;
@@ -11,7 +11,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: blur(6px) opacity(.8);
+        filter: blur(5px) opacity(.3);
     }
     .title{
         width: 100%;
@@ -26,22 +26,22 @@
         }
     }
     .main{
-        @include flex($align: flex-start, $justify: flex-start);
+        @include flex($align: flex-start, $justify: space-around);
         width: 90%;
         height: 100%;
         padding-top: 20px;
         gap: 5px;
 
         .section{
-
             .skillsTitle{
                 margin-bottom: 10px;
 
                 h2{
                     font-family: 'noodle_oblique';
-                    font-size: 3em;
+                    font-size: 2em;
                     letter-spacing: 3px;
                     color: $white;
+                    //text-shadow: $black 1px 1px 1px, $black -1px -1px 1px, $black 1px -1px 1px, $black -1px 1px 1px;
                 }
             }
         }
@@ -49,7 +49,8 @@
             width: 30%;
 
             .skillsList{
-                @include flex($wrap: wrap, $justify: flex-end);
+                @include flex($wrap: wrap, $justify: flex-start);
+                padding-left: 40px;
                 gap: 8px;
 
                 li{
@@ -59,23 +60,90 @@
                     width: 120px;
                     height: 150px;
                     border-radius: 4px;
+                    transition: .1s ease;
+                    border: 2px solid $dark-yellow;
                     @include flex($direction: column,$justify: flex-start);
 
                     .skill-icon{
-                        width: 90%;
+                        width: 100%;
                         height: 70%;
                     }
                     p{
                         font-family: sans-serif;
                         font-weight: bold;
+                        font-size: .9em;
+                        @include flex();
                         text-align: center;
                         height: 30%;
+                        width: 100%;
+                        background: $back1;
+                    }
+                    &:hover{
+                        transform: scale(1.5);
                     }
                 }
             }
         }
         .hardSkills{
-            width: 70%;
+            width: 60%;
+            
+            .skillsList{
+                @include flex($wrap: wrap, $justify: flex-start);
+                gap: 8px;
+                padding-left: 40px;
+
+                li{
+                    color: $black;
+                    list-style: none;
+                    background: $white;
+                    width: 120px;
+                    height: 150px;
+                    border-radius: 4px;
+                    transition: .1s ease;
+                    border: 2px solid $dark-yellow;
+                    @include flex($direction: column,$justify: flex-start);
+
+                    .skill-icon{
+                        width: 100%;
+                        height: 70%;
+                    }
+                    p{
+                        font-family: sans-serif;
+                        font-weight: bold;
+                        font-size: 1.1em;
+                        @include flex();
+                        text-align: center;
+                        height: 30%;
+                        width: 100%;
+                        background: $back1;
+                    }
+                    &:hover{
+                        transform: scale(1.5);
+                    }
+                }
+            }
+        }
+    }
+    button{
+        @include position($btm: 0, $right: 80px);
+        font-size: 2em;
+        padding: 10px 20px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        max-width: 150px;
+        cursor: url('../media/cursors/ow-pointer.cur'), pointer;
+        border: none;
+        outline: none;
+        background: $orange;
+        color: $white;
+        font-family: "noodle", sans-serif;
+        letter-spacing: 3px;
+        font-weight: bold;
+        border-radius: 5px;
+        
+        &:hover{
+            border: 2px solid $white;
+            transform: scale(1.05);
         }
     }
 }
