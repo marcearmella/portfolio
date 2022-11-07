@@ -15,9 +15,13 @@ $white: #f9f9f9;
 $black: #030303;
 $cian: #05a0f9;
 $light-red: #dd4068;
+$lighter-red: #ff90ab;
 $green: #00bb00;
+$light-green: #67ff67;
 $violet: #c142e9;
+$light-violet: #e694ff;
 $dark-yellow: #e3b200;
+$light-yellow: #fae69d;
 $orange: #e26019;
 
 // Mixins
@@ -39,11 +43,34 @@ $orange: #e26019;
 
 @mixin modal($background: $white, $color: $black){
     width: 80%;
-    height: 80vh;
+    height: 90vh;
     background: $background;
     color: $color;
     overflow: hidden;
     animation: openModal .6s ease-in-out;
+}
+
+@mixin closeButton{
+    @include position($btm: 0, $right: 80px);
+    font-size: 2em;
+    padding: 10px 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 150px;
+    cursor: url('../media/cursors/ow-pointer.cur'), pointer;
+    border: none;
+    outline: none;
+    background: $orange;
+    color: $white;
+    font-family: "noodle", sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+    
+    &:hover{
+        border: 2px solid $white;
+        transform: scale(1.05);
+    }
 }
 
 //Keyframes

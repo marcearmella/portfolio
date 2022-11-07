@@ -1,3 +1,28 @@
 .contact_container{
     @include modal;
+    background: $dark-blue;
+    @include position($position: relative);
+    @include flex($direction: column);
+    z-index: -10;
+
+    .title{
+        width: 100%;
+
+        h1{
+            margin: 20px 0 0 40px;
+            font-size: 6em;
+            font-family: "noodle_oblique", sans-serif;
+            font-weight: normal;
+            letter-spacing: 3px;
+            color: $white;
+        }
+    }
+    .main{
+        width: 90%;
+        height: 100%;
+        padding-top: 20px;
+    }
+    button{
+        @include closeButton();
+    }
 }

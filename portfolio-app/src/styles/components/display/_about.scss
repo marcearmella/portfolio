@@ -58,25 +58,6 @@
         }
     }
     button{
-        @include position($btm: 0, $right: 80px);
-        font-size: 2em;
-        padding: 10px 20px;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        max-width: 150px;
-        cursor: url('../media/cursors/ow-pointer.cur'), pointer;
-        border: none;
-        outline: none;
-        background: $orange;
-        color: $white;
-        font-family: "noodle", sans-serif;
-        letter-spacing: 3px;
-        font-weight: bold;
-        border-radius: 5px;
-        
-        &:hover{
-            border: 2px solid $white;
-            transform: scale(1.05);
-        }
+        @include closeButton();
     }
 }

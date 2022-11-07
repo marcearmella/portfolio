@@ -19,79 +19,93 @@
         width: 100%;
         height: 70%;
         @include flex();
-        gap: 20px;
+        gap: 40px;
 
         .project{
-            background: $white;
+            background: linear-gradient(160deg, $dark-yellow 20%, $light-yellow 100%);
             width: 350px;
             height: 500px;
             border-radius: 4px;
             overflow: hidden;
+            box-shadow: 2px 2px 4px $back2;
             transition: .2s ease;
             @include flex($direction: column);
-            &:nth-child(1){background: $green;}
-            &:nth-child(2){background: $light-red;}
-            &:nth-child(3){background: $violet;}
             
             .image{
                 width: 100%;
-                height: 50%;
+                height: 55%;
                 transition: .2s ease;
+                @include flex($direction: column, $justify: flex-start);
+                @include position($position: relative);
+                .videoContainer{
+                    width: 100%;
+                    height: 200px;
+                    margin-top: 20px;
+                    background: #000;
+                    video{
+                        height: 100%;
+                    }
+                    img{
+                        height: 100%;
+                    }
+                }
+                .videoActive{
+                    opacity: .2;
+                }
+                .iconContainer{
+                    @include position($btm: 0);
+                    @include flex();
+                    gap: 20px;
+                    width: 100%;
+                    height: calc(100% - 220px);
+
+                    .icon{
+                        transition: .2s ease;
+                        padding: 2px;
+                        background: $back1;
+                        border-radius: 4px;
+                        box-shadow: 1px 1px 2px $black;
+                        &:hover{
+                            box-shadow: 1px 1px 1px $black;
+                        }
+                    }
+                }
             }
             .text{
                 width: 100%;
-                height: 50%;
+                height: 45%;
                 background: $back1;
-                transition: .2s ease;
+                color: $black;
+                transition: .3s ease-in-out;
                 @include flex($direction: column, $justify: flex-start);
 
                 h2{
                     font-family: sans-serif;
-                    margin: 10px;
+                    margin-top: 10px;
+                    margin-bottom: 5px;
                 }
                 p{
+                    width: 100%;
                     font-size: 1.3em;
                     padding: 0 10px;
                     text-align: start;
                     font-family: sans-serif;
-                    line-height: 25px;
+                    margin-bottom: 12px;
+                }
+                p:last-child{
+                    margin-bottom: 0;
                 }
             }
-            &:hover{
-                transform: scale(1.2);
-                margin: 0 20px;
-                .image{
-                    height: 90%;
-                }
-                .text{
-                    height: 10%;
-                    h2{
-                        margin-bottom: 50px;
-                    }
-                }
+        }
+        .project:focus{
+            outline: $white 3px solid;
+            transform: scale(1.1);
+            .text{
+                background: none;
             }
         }
     }
     button{
-        @include position($btm: 0, $right: 80px);
-        font-size: 2em;
-        padding: 10px 20px;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        max-width: 150px;
-        cursor: url('../media/cursors/ow-pointer.cur'), pointer;
-        border: none;
-        outline: none;
-        background: $orange;
-        color: $white;
-        font-family: "noodle", sans-serif;
-        letter-spacing: 3px;
-        font-weight: bold;
-        border-radius: 5px;
-        
-        &:hover{
-            border: 2px solid $white;
-            transform: scale(1.05);
-        }
+        @include closeButton();
     }
 }

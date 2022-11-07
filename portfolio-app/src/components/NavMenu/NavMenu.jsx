@@ -47,7 +47,7 @@ const NavMenu = () => {
             element: <Projects handleCloseModal={handleCloseModal} />
         },{
             link: 'contáctame',
-            element: <Contact />
+            element: <Contact handleCloseModal={handleCloseModal} />
         }
     ];
 
@@ -65,12 +65,6 @@ const NavMenu = () => {
                         icon={faChevronLeft}
                         className='icon-left'
                         onClick={prevSlide}
-                        size="2x"
-                    />
-                    <FontAwesomeIcon
-                        icon={faCircleXmark}
-                        className='icon-close'
-                        onClick={handleCloseModal}
                         size="2x"
                     />
                     {links[slideNumber].element}

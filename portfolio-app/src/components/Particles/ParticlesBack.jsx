@@ -46,14 +46,14 @@ const ParticlesBack = () => {
                   }
                 },
                 opacity: {
-                  value: 0.21306986324071361,
+                  value: 0.3,
                   random: true
                 },
                 size: {
-                  value: 209.12412503255226,
+                  value: 300,
                   random: true,
                   anim: {
-                    enable: true,
+                    enable: false,
                     speed: 10,
                     size_min: 40,
                     sync: false
@@ -63,11 +63,11 @@ const ParticlesBack = () => {
                   enable: true,
                   speed: 1,
                   direction: "right",
-                  random: true,
+                  random: false,
                   straight: true,
                   bounce: false,
                   attract: {
-                    enable: true,
+                    enable: false,
                     rotateX: 1183.721462448409,
                     rotateY: 3472
                   }
