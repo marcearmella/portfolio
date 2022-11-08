@@ -60,6 +60,8 @@
                     height: calc(100% - 220px);
 
                     .icon{
+                        width: 35px;
+                        height: 35px;
                         transition: .2s ease;
                         padding: 2px;
                         background: $back1;

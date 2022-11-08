@@ -2,9 +2,8 @@ import video1 from '../../../media/videos/videojuegos.mp4';
 import video2 from '../../../media/videos/flymate.mp4';
 import imprentamodelo from '../../../media/images/imprentamodelo.jpg';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGithub} from '@fortawesome/free-brands-svg-icons'
-import { useState, useRef, useEffect } from 'react';
-
+import {faGithub} from '@fortawesome/free-brands-svg-icons';
+import {faLink} from '@fortawesome/free-solid-svg-icons';
 
 function Projects({handleCloseModal}){
     // const [video, setVideo] = useState(false);
@@ -61,6 +60,7 @@ function Projects({handleCloseModal}){
                         </div>
                         <div className="iconContainer">
                             <a href='https://github.com/marcearmella/imprentamodelo' target={"blank"}><FontAwesomeIcon icon={faGithub} size="2x" className='icon' /></a>
+                            <a href='http://www.imprentamodelo.com' target={"blank"}><FontAwesomeIcon icon={faLink} size="2x" className='icon' /></a>
                         </div>
                     </div>
                     <div className="text">

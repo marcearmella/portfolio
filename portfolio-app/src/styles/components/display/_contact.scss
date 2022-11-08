@@ -1,6 +1,7 @@
 .contact_container{
     @include modal;
     background: $dark-blue;
+    background: radial-gradient(circle farthest-corner at center center, $back1 0%, $light-blue 60%);
     @include position($position: relative);
     @include flex($direction: column);
     z-index: -10;
@@ -19,8 +20,29 @@
     }
     .main{
         width: 90%;
-        height: 100%;
+        height: calc(100% - 260px);
         padding-top: 20px;
+        background: green;
+
+        .contact_form{
+            background: red;
+            width: 100%;
+            @include flex($direction: column);
+
+            .inputs{
+                background: pink;
+                @include flex($direction: column);
+                width: 50%;
+
+                .input{
+                    width: 100%;
+                    height: 5em;
+                }
+            }
+            input[type=submit]{
+                
+            }
+        }
     }
     button{
         @include closeButton();
