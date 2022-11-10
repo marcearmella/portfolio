@@ -1,0 +1,55 @@
+{
+    "navMenu": {
+        "about": "sobre mí",
+        "skills": "habilidades",
+        "projects": "proyectos",
+        "contact": "contáctame"
+    },
+    "display": {
+        "closeButton": "cerrar"
+    },
+    "about": {
+        "title": "Hola, soy Marcelo Augusto Armella !",
+        "text": "Fullstack web developer, recientemente graduado del bootcamp Soy Henry, en donde adquirí muchos conocimientos sobre NodeJs, React con múltiples librerías, Express y más. Además de aprender a trabajar en grupo con metodologías SCRUM y usando tecnologías como Git."
+    },
+    "skills": {
+        "title": "Mis Habilidades",
+        "soft": "Blandas",
+        "hard": "Duras",
+        "team": "Trabajo en Equipo",
+        "learn": "Aprendizaje Constante",
+        "communication": "Comunicación",
+        "problems": "Resolución de Problemas",
+        "results": "Mentalidad de Crecimiento",
+        "responsability": "Responsabilidad"
+    },
+    "projects": {
+        "title": "Proyectos",
+        "videogame": {
+            "title": "Wiki de Videojuegos",
+            "desc": "Sitio Web de una enciclopedia de videojuegos, creada en base a una API externa.",
+            "back": "Back: Node, Express, PostgreSQL",
+            "front": "Front: React, CSS modules"
+        },
+        "flymate": {
+            "title": "FlyMate",
+            "desc": "Aplicación móvil para la compra de pasajes aéreos, con manejo se sesión, reseñas y más.",
+            "back": "Back: Node, Express, MongoDB",
+            "front": "Front: React Native"
+        },
+        "modelo": {
+            "title": "Imprenta Modelo",
+            "desc": "Sitio Web de una Imprenta gráfica, usada como página promocional para la mísma.",
+            "back": "",
+            "front": "Front: React, CSS modules"
+        }
+    },
+    "contact": {
+        "title": "Contáctame",
+        "name": "Nombre",
+        "email": "Email",
+        "subject": "Asunto",
+        "msg": "Deja tu mensaje",
+        "send": "enviar"
+    }
+}

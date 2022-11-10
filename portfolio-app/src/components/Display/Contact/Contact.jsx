@@ -6,6 +6,7 @@ import env from '../../../env';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faAt, faSignature, faTags } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation } from "react-i18next";
 
 function Contact({handleCloseModal}){
     const refForm = useRef();
@@ -50,10 +51,12 @@ function Contact({handleCloseModal}){
         );
     };
 
+    const [t] = useTranslation('lang');
+
     return (
         <div className="contact_container">
             <div className="title">
-                <h1>Contáctame</h1>
+                <h1>{t('contact.title')}</h1>
             </div>
             <div className="main">
                 <form className="contact_form" ref={refForm} onSubmit={sendEmail}>
@@ -73,30 +76,30 @@ function Contact({handleCloseModal}){
                             <div className="input_icon">
                                 <FontAwesomeIcon icon={faSignature} className="icon" />
                             </div>
-                            <input className="input" placeholder="Nombre" type="text" name="name" required />
+                            <input className="input" placeholder={t('contact.name')} type="text" name="name" required />
                         </div>
                         <div className="input_container">
                             <div className="input_icon">
                             <FontAwesomeIcon icon={faAt} className="icon" />
                             </div>
-                            <input className="input" placeholder="Email" type="email" name="email" required />
+                            <input className="input" placeholder={t('contact.email')} type="email" name="email" required />
                         </div>
                         <div className="input_container">
                             <div className="input_icon">
                                 <FontAwesomeIcon icon={faTags} className="icon" />
                             </div>
-                            <input className="input" placeholder="Asunto" type="text" name="subject" required />
+                            <input className="input" placeholder={t('contact.subject')} type="text" name="subject" required />
                         </div>
                         <div className="input_container">
                             <textarea
                                 className="textInput"
-                                placeholder="Deja tu mensaje"
+                                placeholder={t('contact.msg')}
                                 name="message"
                                 required
                             ></textarea>
                         </div>
                     </div>
-                    <input type="submit" value="Enviar" />
+                    <input type="submit" value={t('contact.send')} />
                 </form>
                 <div className="contact_links">
                     <a href="https://github.com/marcearmella" target="_blank">
@@ -126,7 +129,7 @@ function Contact({handleCloseModal}){
                 </div>
             </div>
             <button className="closeModal" onClick={handleCloseModal}>
-                CERRAR
+                {t('display.closeButton')}
             </button>
         </div>
     );

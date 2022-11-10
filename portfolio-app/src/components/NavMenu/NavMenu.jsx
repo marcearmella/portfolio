@@ -9,6 +9,7 @@ import {
     faChevronRight,
     faCircleXmark,
 } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 
 const NavMenu = () => {
     const [slideNumber, setSlideNumber] = useState(0);
@@ -35,18 +36,20 @@ const NavMenu = () => {
             : setSlideNumber(slideNumber + 1);
     };
 
+    const [t] = useTranslation('lang');
+
     const links = [
         {
-            link: 'sobre mí',
+            link: t('navMenu.about'),
             element: <About handleCloseModal={handleCloseModal} />
         },{
-            link: 'habilidades',
+            link: t('navMenu.skills'),
             element: <Skills handleCloseModal={handleCloseModal} />
         },{
-            link: 'proyectos',
+            link: t('navMenu.projects'),
             element: <Projects handleCloseModal={handleCloseModal} />
         },{
-            link: 'contáctame',
+            link: t('navMenu.contact'),
             element: <Contact handleCloseModal={handleCloseModal} />
         }
     ];

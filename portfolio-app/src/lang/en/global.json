@@ -1,0 +1,55 @@
+{
+    "navMenu": {
+        "about": "about me",
+        "skills": "skills",
+        "projects": "projects",
+        "contact": "contact me"
+    },
+    "display": {
+        "closeButton": "close"
+    },
+    "about": {
+        "title": "Hello, I'm Marcelo Augusto Armella !",
+        "text": "Fullstack web developer, recently graduated from the bootcamp Soy Henry, where I acquired knowledge about NodeJs, React with multiple libraries, Express and more. Besides learning to work in groups with SCRUM methodologies and using technologies like Git."
+    },
+    "skills": {
+        "title": "My Skills",
+        "soft": "Soft",
+        "hard": "Hard",
+        "team": "Teamwork",
+        "learn": "Willingness to Learn",
+        "communication": "Communication",
+        "problems": "Problem-solving",
+        "results": "Growth Mindset",
+        "responsability": "Responsibility"
+    },
+    "projects": {
+        "title": "Projects",
+        "videogame": {
+            "title": "Games Wiki",
+            "desc": "Wikipedia of games, created based on an external API.",
+            "back": "Back: Node, Express, PostgreSQL",
+            "front": "Front: React, CSS modules"
+        },
+        "flymate": {
+            "title": "FlyMate",
+            "desc": "Mobile aplication for purchasing airline tickets to any destination in the world",
+            "back": "Back: Node, Express, MongoDB",
+            "front": "Front: React Native"
+        },
+        "modelo": {
+            "title": "Printing Company Modelo",
+            "desc": "Commercial Website of a familiar printing business.",
+            "back": "",
+            "front": "Front: React, CSS modules"
+        }
+    },
+    "contact": {
+        "title": "Contact me",
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "msg": "Leave your message",
+        "send": "Send"
+    }
+}
