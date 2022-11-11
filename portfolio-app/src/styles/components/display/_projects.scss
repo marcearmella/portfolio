@@ -1,3 +1,5 @@
+@use '../../settings/' as *;
+
 .projects_container{
     @include modal;
     @include position($position: relative);

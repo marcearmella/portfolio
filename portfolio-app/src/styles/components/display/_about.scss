@@ -1,3 +1,5 @@
+@use '../../settings/' as *;
+
 .about_container{
     @include modal();
     position: relative;
