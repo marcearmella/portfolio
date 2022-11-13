@@ -95,9 +95,9 @@
                     text-align: start;
                     font-family: sans-serif;
                     margin-bottom: 12px;
-                }
-                p:last-child{
-                    margin-bottom: 0;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
                 }
             }
         }

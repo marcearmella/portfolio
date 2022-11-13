@@ -1,3 +1,5 @@
+@forward 'mixins';
+
 // Normalize
 *{
     padding: 0;
@@ -43,7 +45,7 @@ $orange: #e26019;
 }
 
 @mixin modal($background: $white, $color: $black){
-    width: 80%;
+    width: 90%;
     height: 90vh;
     background: $background;
     color: $color;

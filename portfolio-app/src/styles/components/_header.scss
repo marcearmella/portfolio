@@ -12,9 +12,10 @@
 
     .player_container{
         @include flex();
+        @include position($position: relative);
 
         .player{
-            background: #fffffffe;
+            background: #ffffffdd;
             height: 5rem;
             border-radius: 4px;
             display: flex;
@@ -65,5 +66,15 @@
                 opacity: 1;
             }
         }
+    }
+
+    @include breakpoint-down(large){
+        
+    }
+    @include breakpoint-down(medium){
+        
+    }
+    @include breakpoint-down(small){
+        
     }
 }

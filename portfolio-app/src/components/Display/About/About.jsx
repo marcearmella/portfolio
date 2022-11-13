@@ -7,7 +7,7 @@ function About({handleCloseModal}){
 
     return (
         <div className="about_container">
-            <div className="header">
+            <div className="about_container__header">
                 <h1>{t('about.title')}</h1>
             </div>
             <div className="aside">
