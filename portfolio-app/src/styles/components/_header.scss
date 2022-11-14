@@ -69,12 +69,47 @@
     }
 
     @include breakpoint-down(large){
-        
+        padding: 0 10px;
+        img{
+            height: 2.6rem;
+        }
+        .player_container{
+            .player{
+                height: 4.5rem;
+                .name{
+                    font-size: 1.8rem;
+                    padding: 0 10px;
+                }
+            }
+            .langButton{
+                width: 4.5rem;
+                height: 4.5rem;
+            }
+        }
     }
     @include breakpoint-down(medium){
-        
+        padding: 0 10px;
+        img{
+            height: 1.8rem;
+        }
+        .player_container{
+            .player{
+                height: 3rem;
+                .name{
+                    font-size: 1.5rem;
+                }
+                .avatar{
+                    width: 3rem;
+                }
+            }
+            .langButton{
+                width: 3rem;
+                height: 3rem;
+                margin-left: 5px;
+            }
+        }
     }
     @include breakpoint-down(small){
-        
+        background: green;
     }
 }

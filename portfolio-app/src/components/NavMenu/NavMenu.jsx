@@ -60,13 +60,13 @@ const NavMenu = () => {
                 <div className="navMenu_modal">
                     <FontAwesomeIcon
                         icon={faChevronRight}
-                        className='icon-right'
+                        className='icon-right arrow-icons'
                         onClick={nextSlide}
                         size="2x"
                     />
                     <FontAwesomeIcon
                         icon={faChevronLeft}
-                        className='icon-left'
+                        className='icon-left arrow-icons'
                         onClick={prevSlide}
                         size="2x"
                     />

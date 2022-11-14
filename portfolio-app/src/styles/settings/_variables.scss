@@ -1,0 +1,30 @@
+$back1: #dae5ee;
+$back2: #8b94a9;
+$back3: #cae6fc;
+$dark-blue: #3b486d;
+$light-blue: #7c9dc5;
+$dark-blue_t: #121624d4;
+$white: #f9f9f9;
+$black: #030303;
+$cian: #05a0f9;
+$light-red: #dd4068;
+$lighter-red: #ff90ab;
+$green: #00bb00;
+$light-green: #67ff67;
+$violet: #c142e9;
+$light-violet: #e694ff;
+$dark-yellow: #e3b200;
+$light-yellow: #fae69d;
+$orange: #e26019;
+
+$breakpoint-up: (
+    "medium": 43.75em,
+    "large": 56.25em,
+    "xlarge": 90em
+);
+
+$breakpoint-down: (
+    'small': 43.7485em,
+    'medium': 56.24875em,
+    'large': 89.99875em
+);

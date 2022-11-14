@@ -32,13 +32,13 @@
             "front": "Front: React, CSS modules"
         },
         "flymate": {
-            "title": "FlyMate",
+            "title": "\"FlyMate\"",
             "desc": "Aplicación móvil para la compra de pasajes aéreos, con manejo se sesión, reseñas y más.",
             "back": "Back: Node, Express, MongoDB",
             "front": "Front: React Native"
         },
         "modelo": {
-            "title": "Imprenta Modelo",
+            "title": "Imprenta \"Modelo\"",
             "desc": "Sitio Web de una Imprenta gráfica, usada como página promocional para la mísma.",
             "back": "",
             "front": "Front: React, CSS modules"

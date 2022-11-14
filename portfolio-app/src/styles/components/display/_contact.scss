@@ -174,4 +174,105 @@
     .closeModal{
         @include closeButton();
     }
+
+    @include breakpoint-down(large){
+        .title{
+            h1{
+                margin: 10px 10px;
+                font-size: 5em;
+            }
+        }
+        .main{
+            width: calc(100% - 20px);
+            height: auto;
+            .contact_form{
+                width: 400px;
+                .inputs{
+                    .input_container{
+                        height: 3em;
+                        margin-bottom: 10px;
+                        &:last-child{
+                            margin-top: 50px;
+                            margin-bottom: 65px;
+                        }
+                        .input_icon{
+                            width: 3em;
+                            &::after{
+                                width: 60%;
+                                height: 60%;
+                                border: 4px solid $back2;
+                            }
+                        }
+                        .input{
+                            letter-spacing: 1px;
+                            font-size: 1.8em;
+                            padding-left: 10px;
+                        }
+                        .textInput{
+                            font-size: 1.2em;
+                        }
+                        .textInput::placeholder{
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+            .contact_links{
+                width: 300px;
+                .link-container{
+                    height: 3em;
+                    h2{
+                        font-size: 1.8em;
+                        letter-spacing: 3px;
+                    }
+                    .link-icon{
+                        width: 3em;
+                    }
+                }
+            }
+        }
+    }
+    @include breakpoint-down(medium){
+        .title{
+            margin-bottom: 40px;
+            h1{
+                margin: 10px 0 0 10px;
+                font-size: 3.5em;
+            }
+        }
+        .main{
+            .contact_form{
+                width: 350px;
+                .inputs{
+                    .input_container{
+                        height: 3em;
+                        margin-bottom: 10px;
+                        &:last-child{
+                            margin-top: 50px;
+                            margin-bottom: 65px;
+                        }
+                        .input_icon{
+                            width: 3em;
+                            &::after{
+                                width: 60%;
+                                height: 60%;
+                                border: 4px solid $back2;
+                            }
+                        }
+                        .input{
+                            letter-spacing: 1px;
+                            font-size: 1.8em;
+                            padding-left: 10px;
+                        }
+                        .textInput{
+                            font-size: 1.2em;
+                        }
+                        .textInput::placeholder{
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

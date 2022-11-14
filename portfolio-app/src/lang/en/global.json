@@ -32,13 +32,13 @@
             "front": "Front: React, CSS modules"
         },
         "flymate": {
-            "title": "FlyMate",
+            "title": "\"FlyMate\"",
             "desc": "Mobile aplication for purchasing airline tickets to any destination in the world",
             "back": "Back: Node, Express, MongoDB",
             "front": "Front: React Native"
         },
         "modelo": {
-            "title": "Printing Company Modelo",
+            "title": "Printing Services \"Modelo\"",
             "desc": "Commercial Website of a familiar printing business.",
             "back": "",
             "front": "Front: React, CSS modules"

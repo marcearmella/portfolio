@@ -1,14 +1,4 @@
-$breakpoint-up: (
-    "medium": 43.75em,
-    "large": 56.25em,
-    "xlarge": 90em
-);
-
-$breakpoint-down: (
-    'small': 43.7485em,
-    'medium': 56.24875em,
-    'large': 89.99875em
-);
+@use './variables' as *;
 
 @mixin breakpoint($size){
     @media (min-width: map-get($breakpoint-up, $size)){
@@ -19,5 +9,71 @@ $breakpoint-down: (
 @mixin breakpoint-down($size){
     @media (max-width: map-get($breakpoint-down, $size)){
         @content;
+    }
+}
+
+@mixin flex($direction: row, $align: center, $justify: center, $wrap: nowrap){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+@mixin position($position: absolute, $top: auto, $btm: auto, $left: auto, $right: auto){
+    position: $position;
+    top: $top;
+    bottom: $btm;
+    left: $left;
+    right: $right;
+}
+
+@mixin modal($background: $white, $color: $black){
+    width: 90%;
+    height: 90vh;
+    background: $background;
+    color: $color;
+    overflow: hidden;
+    animation: openModal .6s ease-in-out;
+    @include breakpoint-down(medium){
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@mixin closeButton{
+    @include position($btm: 0, $right: 80px);
+    font-size: 2em;
+    padding: 10px 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 150px;
+    cursor: url('../media/cursors/ow-pointer.cur'), pointer;
+    border: none;
+    outline: none;
+    background: $orange;
+    color: $white;
+    font-family: "noodle", sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    
+    &:hover{
+        border: 2px solid $white;
+        transform: scale(1.05);
+    }
+
+    @include breakpoint-down(large){
+        right: 10px;
+    }
+    @include breakpoint-down(medium){
+        right: 0;
+        left: 0;
+        margin-bottom: 20px;
+        max-width: auto;
+        padding: 0;
+        width: 120px;
+        height: 50px;
     }
 }

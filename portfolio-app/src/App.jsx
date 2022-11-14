@@ -10,7 +10,7 @@ function App() {
       <Header />
       <NavMenu />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
