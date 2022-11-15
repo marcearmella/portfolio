@@ -14,10 +14,12 @@ function Header(){
 
     return (
         <div className="header_container">
-            <img src={overwatch} />
+            <img className='img-logo' src={overwatch} />
             <div className="player_container">
                 <div className="player">
-                    <div className="avatar"><img src={avatar}/></div>
+                    <div className="avatar">
+                        <img src={avatar}/>
+                    </div>
                     <p className="name">Marcelo Armella</p>
                 </div>
                 {

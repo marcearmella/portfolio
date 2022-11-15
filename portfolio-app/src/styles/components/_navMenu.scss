@@ -62,13 +62,13 @@
             @include position($right: 0);
         }
 
-        .navMenu_modal-window{
-            width: 90%;
-            height: 90vh;
-            background: $white;
-            @include flex;
-            animation: openModal 1s ease;
-        }
+        // .navMenu_modal-window{
+        //     width: 90%;
+        //     height: 90vh;
+        //     background: $white;
+        //     @include flex;
+        //     animation: openModal 1s ease;
+        // }
     }
 
     @include breakpoint-down(large){
@@ -101,6 +101,30 @@
     
             .icon-right{
                 right: calc(50% - 120px);
+            }
+        }
+    }
+
+    @include breakpoint-down(small){
+        .navMenu_container{
+            position: absolute;
+            top: 0;
+            height: 100vh;
+            width: 100%;
+            @include flex($justify: flex-start);
+            .nav_ul{
+                width: 100%;
+                margin: 0;
+                li{
+                    margin-bottom: 20px;
+                    &:hover{
+                        transform: translate(0) scale(1.1);
+                    }
+                    p{
+                        font-size: 4rem;
+                        text-align: center;
+                    }
+                }
             }
         }
     }
