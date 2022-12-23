@@ -32,6 +32,7 @@ function Contact({handleCloseModal}){
     });
 
     const sendEmail = (e) => {
+        let malenitaChan = undefined;
         e.preventDefault();
         emailjs.sendForm(
             env.SERVICE,
@@ -55,11 +56,12 @@ function Contact({handleCloseModal}){
 
     return (
         <div className="contact_container">
+            <div className="arrows-cont"></div>
             <div className="title">
                 <h1>{t('contact.title')}</h1>
             </div>
             <div className="main">
-                <form className="contact_form" ref={refForm} onSubmit={sendEmail}>
+                <form className="contact_form" ref={refForm} onSubmit={e => sendEmail(e)}>
                     <ToastContainer
                         position="top-center"
                         autoClose={2000}
@@ -76,7 +78,7 @@ function Contact({handleCloseModal}){
                             <div className="input_icon">
                                 <FontAwesomeIcon icon={faSignature} className="icon" />
                             </div>
-                            <input className="input" placeholder={t('contact.name')} type="text" name="name" required />
+                            <input className="input" placeholder={t('contact.name')} type="text" name="namex" required />
                         </div>
                         <div className="input_container">
                             <div className="input_icon">
@@ -128,9 +130,12 @@ function Contact({handleCloseModal}){
                     </a>
                 </div>
             </div>
-            <button className="closeModal" onClick={handleCloseModal}>
-                {t('display.closeButton')}
-            </button>
+            <div className="btm-container">
+                <button className="closeModal" onClick={handleCloseModal}>
+                    {t('display.closeButton')}
+                </button>
+            </div>
+            
         </div>
     );
 }

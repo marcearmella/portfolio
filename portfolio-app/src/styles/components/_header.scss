@@ -107,7 +107,7 @@
         align-items: flex-start;
         padding: 0;
         height: auto;
-        position: relative;
+        position: static;
         .img-logo{
             margin: 25px 0 35px 10px;
             width: calc(100% - 3rem - 30px);

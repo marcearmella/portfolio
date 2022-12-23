@@ -12,6 +12,7 @@ function Projects({handleCloseModal}){
 
     return (
         <div className="projects_container">
+            <div className="arrows-cont"></div>
             <div className="title">
                 <h1>{t('projects.title')}</h1>
             </div>
@@ -65,9 +66,11 @@ function Projects({handleCloseModal}){
                     </div>
                 </div>
             </div>
-            <button onClick={handleCloseModal}>
-                {t('display.closeButton')}
-            </button>
+            <div className="btm-container">
+                <button onClick={handleCloseModal}>
+                    {t('display.closeButton')}
+                </button>
+            </div>
         </div>
     );
 }

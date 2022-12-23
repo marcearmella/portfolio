@@ -7,6 +7,7 @@ function About({handleCloseModal}){
 
     return (
         <div className="about_container">
+            <div className="arrows-cont"></div>
             <div className="about_container__header">
                 <h1>{t('about.title')}</h1>
             </div>
@@ -18,9 +19,11 @@ function About({handleCloseModal}){
                     {t('about.text')}
                 </p>
             </div>
-            <button onClick={handleCloseModal}>
-                {t('display.closeButton')}
-            </button>
+            <div className="btm-container">
+                <button onClick={handleCloseModal}>
+                    {t('display.closeButton')}
+                </button>
+            </div>
         </div>
     );
 }

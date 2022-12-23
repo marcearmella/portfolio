@@ -102,6 +102,7 @@ function Skills({handleCloseModal}){
     const hard = skills.hard;
     return (
         <div className="skills_container">
+            <div className="arrows-cont"></div>
             <img className='image' src={background} alt="Imagen de fondo" />
             <div className="title">
                 <h1>{t('skills.title')}</h1>
@@ -134,10 +135,11 @@ function Skills({handleCloseModal}){
                     </ul>
                 </div>
             </div>
-            
-            <button onClick={handleCloseModal}>
-                {t('display.closeButton')}
-            </button>
+            <div className="btm-container">
+                <button onClick={handleCloseModal}>
+                    {t('display.closeButton')}
+                </button>
+            </div>
         </div>
     );
 }
