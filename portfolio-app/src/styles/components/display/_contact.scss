@@ -269,7 +269,7 @@
         justify-content: flex-start;
         .title{
             margin: 0;
-            margin-bottom: 30px;
+            margin-bottom: 0;
             h1{
                 margin: 10px 0 0 10px;
                 font-size: 3.5em;
@@ -281,20 +281,21 @@
             width: 100%;
             margin: 0;
             border-top: none;
+            
             .contact_form{
-                width: 90%;
+                width: 95%;
                 border-top: 4px solid #00000033;
-                padding-top: 20px;
+                padding-top: 10px;
                 .inputs{
                     .input_container{
-                        height: 3em;
-                        margin-bottom: 10px;
+                        height: 2.5em;
+                        margin-bottom: 5px;
                         &:last-child{
-                            margin-top: 50px;
-                            margin-bottom: 65px;
+                            margin-top: 30px;
+                            margin-bottom: 35px;
                         }
                         .input_icon{
-                            width: 3em;
+                            width: 2.5em;
                             &::after{
                                 width: 60%;
                                 height: 60%;
@@ -303,36 +304,41 @@
                         }
                         .input{
                             letter-spacing: 1px;
-                            font-size: 1.8em;
+                            font-size: 1.2em;
                             padding-left: 10px;
                         }
                         .textInput{
-                            font-size: 1.2em;
+                            margin-top: 0;
+                            font-size: 1em;
+                            height: 100px;
                         }
                         .textInput::placeholder{
-                            font-size: 1.2em;
+                            font-size: 1em;
                         }
                     }
                 }
                 input[type=submit]{
-                    font-size: 1.5em;
+                    font-size: 1.3em;
                     font-weight: bold;
                     border-radius: 5px;
+                    padding: 4px 8px;
+                    border: 2px solid #FFFFFF66;
                 }
             }
             .contact_links{
-                width: 90%;
-                margin-bottom: 15px;
+                width: 95%;
+                margin-bottom: 5px;
                 .link-container{
-                    height: 3em;
+                    height: 2.5em;
                     margin: 0;
                     margin-bottom: 5px;
                     h2{
-                        font-size: 1.8em;
+                        font-size: 1.5em;
                         letter-spacing: 3px;
                     }
                     .link-icon{
-                        width: 3em;
+                        width: 2.5em;
+                        font-size: .6em;
                     }
                 }
             }
